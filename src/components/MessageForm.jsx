@@ -19,9 +19,9 @@ export default function MessageForm( { label, placeholder } ) {
     // console.log(c)
   
     return(
-      <div>
+      <div className="form-group">
         <label>{label}</label>
-        <input type="text" placeholder={placeholder} />
+        <input type="text" className="form-control" placeholder={placeholder} />
         <ButtonSend label="Send" />
       </div>
     )
