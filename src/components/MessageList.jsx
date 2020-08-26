@@ -30,7 +30,7 @@ export default function MessageList({ messages }) {
 
   return (
       <ul className="list-group">
-        {messageArray.map(item => {
+        {messageArray.reverse().map(item => {
           const key = item[0]
           const messageData = item[1]
           const message = messageData.message
